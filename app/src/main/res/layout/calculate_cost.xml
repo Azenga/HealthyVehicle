@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbe7f5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<Button
+android:id="@+id/calculate"
+android:layout_width="match_parent"
+android:text="Calculate"
+android:textSize="30dp"
+    android:layout_marginBottom="25dp"
+android:layout_gravity="center_horizontal"
+android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/cost_1"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="Display Cost"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+<Button
+android:id="@+id/updatecost"
+android:layout_width="match_parent"
+android:text="Update cost"
+android:textSize="30dp"
+    android:layout_marginBottom="25dp"
+android:layout_gravity="center_horizontal"
+android:layout_height="wrap_content"
+    />
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:text="Display Updated Cost"
+        android:textSize="33dp"
+        android:layout_marginBottom="25dp"
+        android:textStyle="bold"
+        android:layout_height="50dp"/>
+<Button
+android:id="@+id/read"
+android:layout_width="match_parent"
+android:text="Read"
+android:textSize="30dp"
+    android:layout_marginBottom="25dp"
+android:layout_gravity="center_horizontal"
+android:layout_height="wrap_content"
+    />
+<Button
+android:id="@+id/delete"
+android:layout_width="match_parent"
+android:text="Delete"
+android:textSize="30dp"
+android:layout_gravity="center_horizontal"
+android:layout_height="wrap_content"
+    />
+    </LinearLayout>

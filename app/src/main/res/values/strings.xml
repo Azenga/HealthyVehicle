@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">VehicleProject</string>
+    <string name="title_activity_hire">Hire</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="licence_propmpt">By logging in,you agree to the terms and conditions outlined in the end user license agreement</string>
+    <string name="first_name_hint">First Name...</string>
+    <string name="last_name_hint">Last Name...</string>
+    <string name="username_text">Username...</string>
+    <string name="password_text">Password...</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="register_text">Register</string>
+    <string name="have_account_prompt">Already have an account?</string>
+    <string name="subaru_text">Subaru</string>
+    <string name="login_text">Login</string>
+    <string name="health_cars_services_text">Healthy Car Healthy Services</string>
+    <string name="remember_me_text">Remember Me</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+    <string name="welcome_back_text">Welcome Back</string>
+</resources>
