@@ -15,6 +15,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.example.vehicleproject.R;
 import com.example.vehicleproject.utils.Helper;
@@ -28,7 +29,7 @@ public class BusFragment extends Fragment {
 
     private EditText noOfPassengersEt, durationEt;
     private TextView amountTv;
-    private CheckBox payLaterCheckBox;
+    private CheckBox payCheckBox;
 
     private DecimalFormat mDf = new DecimalFormat("##.##");
 
@@ -113,25 +114,26 @@ public class BusFragment extends Fragment {
             }
         });
 
-        payLaterCheckBox = view.findViewById(R.id.pay_later_check_box);
+        payCheckBox = view.findViewById(R.id.pay_check_box);
 
         Button completeRequestButton = view.findViewById(R.id.complete_request_button);
 
         completeRequestButton.setOnClickListener(btn -> {
 
-            if (payLaterCheckBox.isSelected()) {
+            if (payCheckBox.isSelected()) {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(requireContext());
 
                 alertDialog.setTitle("Proceed to payment");
-                alertDialog.setMessage("Are you sure you want to proceed without paying?");
+                alertDialog.setMessage("Are you sure you want to pay first?");
 
-                alertDialog.setPositiveButton("SURE", (dialog, which) -> {
-
-                });
+                alertDialog.setPositiveButton("SURE", (dialog, which) ->
+                        Navigation.findNavController(btn).navigate(R.id.action_busFragment_to_transactionFragment));
 
                 alertDialog.setNegativeButton("CANCEL", (dialog, which) -> {
 
                 });
+
+                alertDialog.show();
             }
         });
     }

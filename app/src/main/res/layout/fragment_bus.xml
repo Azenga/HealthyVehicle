@@ -60,11 +60,11 @@
 
 
     <CheckBox
-        android:id="@+id/pay_later_check_box"
+        android:id="@+id/pay_check_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/pay_later_text" />
+        android:text="@string/pay_now_text" />
 
     <Button
         android:id="@+id/complete_request_button"

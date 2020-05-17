@@ -53,6 +53,8 @@
     <string name="real_advice_text">Subscribe with us to get the best out of us.</string>
     <string name="enter_weight_tonnes_txt">Enter Weight(Tonnes)</string>
     <string name="pay_via_bank_text">Pay Via Bank</string>
+    <string name="pay_now_text">Pay Now</string>
+    <string name="logout_text">Logout</string>
 
     <string-array name="vehicle_types">
         <item>Motorcycle (50)</item>
