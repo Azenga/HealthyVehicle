@@ -3,41 +3,94 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.vehicleproject.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-
+        android:id="@+id/homeFragment"
+        android:name="com.example.vehicleproject.ui.fragments.HomeFragment"
+        android:label="@string/home_text"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/hireFragment"
+        android:name="com.example.vehicleproject.ui.fragments.HireFragment"
+        android:label="@string/hire_text"
+        tools:layout="@layout/fragment_hire" >
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
+            android:id="@+id/action_hireFragment_to_pickupFragment"
+            app:destination="@id/pickupFragment" />
+        <action
+            android:id="@+id/action_hireFragment_to_vanFragment"
+            app:destination="@id/vanFragment" />
+        <action
+            android:id="@+id/action_hireFragment_to_vanFragment2"
+            app:destination="@id/vanFragment" />
+        <action
+            android:id="@+id/action_hireFragment_to_busFragment"
+            app:destination="@id/busFragment" />
+        <action
+            android:id="@+id/action_hireFragment_to_motorcycleFragment"
+            app:destination="@id/motorcycleFragment" />
+        <action
+            android:id="@+id/action_hireFragment_to_carFragment"
+            app:destination="@id/carFragment" />
     </fragment>
     <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.example.vehicleproject.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
+        android:id="@+id/transportationFragment"
+        android:name="com.example.vehicleproject.ui.fragments.TransportationFragment"
+        android:label="@string/transportation_text"
+        tools:layout="@layout/fragment_transportation" />
+    <fragment
+        android:id="@+id/adviceFragment"
+        android:name="com.example.vehicleproject.ui.fragments.AdviceFragment"
+        android:label="@string/advice_text"
+        tools:layout="@layout/fragment_advice" />
+    <fragment
+        android:id="@+id/repairFragment"
+        android:name="com.example.vehicleproject.ui.fragments.RepairFragment"
+        android:label="@string/repair_text"
+        tools:layout="@layout/fragment_repair" />
+    <fragment
+        android:id="@+id/busFragment"
+        android:name="com.example.vehicleproject.ui.fragments.hire.BusFragment"
+        android:label="BusFragment" >
         <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
+            android:id="@+id/action_busFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
     </fragment>
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.vehicleproject.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/carFragment"
+        android:name="com.example.vehicleproject.ui.fragments.hire.CarFragment"
+        android:label="CarFragment" >
+        <action
+            android:id="@+id/action_carFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.vehicleproject.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/motorcycleFragment"
+        android:name="com.example.vehicleproject.ui.fragments.hire.MotorcycleFragment"
+        android:label="MotorcycleFragment" >
+        <action
+            android:id="@+id/action_motorcycleFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vanFragment"
+        android:name="com.example.vehicleproject.ui.fragments.hire.VanFragment"
+        android:label="VanFragment" >
+        <action
+            android:id="@+id/action_vanFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickupFragment"
+        android:name="com.example.vehicleproject.ui.fragments.hire.PickupFragment"
+        android:label="PickupFragment" >
+        <action
+            android:id="@+id/action_pickupFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.example.vehicleproject.ui.fragments.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" />
 </navigation>

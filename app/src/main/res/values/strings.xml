@@ -13,11 +13,11 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
-    <string name="licence_propmpt">By logging in,you agree to the terms and conditions outlined in the end user license agreement</string>
-    <string name="first_name_hint">First Name...</string>
-    <string name="last_name_hint">Last Name...</string>
-    <string name="username_text">Username...</string>
-    <string name="password_text">Password...</string>
+    <string name="licence_prompt">By logging in,you agree to the terms and conditions outlined in the end user license agreement</string>
+    <string name="first_name_hint">First Name…</string>
+    <string name="last_name_hint">Last Name…</string>
+    <string name="username_text">Username…</string>
+    <string name="password_text">Password…</string>
     <string name="confirm_password_text">Confirm Password</string>
     <string name="register_text">Register</string>
     <string name="have_account_prompt">Already have an account?</string>
@@ -27,4 +27,38 @@
     <string name="remember_me_text">Remember Me</string>
     <string name="forgot_password_text">Forgot Password?</string>
     <string name="welcome_back_text">Welcome Back</string>
+    <string name="hello_blank_fragment">Welcome New Fragment</string>
+    <string name="hire_text">Hire</string>
+    <string name="transportation_text">Transportation</string>
+    <string name="repair_text">Cleaning and Repair</string>
+    <string name="advice_text">Advice</string>
+    <string name="home_text">Home</string>
+    <string name="welcome_text">Welcome to Health Vehicle</string>
+    <string name="hire_guide_1">Choose the type of car You Want to Hire, Note that any extra costs incurred will be in the client</string>
+    <string name="car_text">Car</string>
+    <string name="bus_text">Bus</string>
+    <string name="van_text">Van</string>
+    <string name="motorcycle_text">Motorcycle</string>
+    <string name="pickup_text">Pickup</string>
+    <string name="cleaning_service_message">Cleaning Fee Depends on the Type of Vehicle, Select the correct car please</string>
+    <string name="select_vehicle_prompt">Select Vehicle Type</string>
+    <string name="service_cost_label">Service cost:</string>
+    <string name="no_pay_text">Ksh. 0.00</string>
+    <string name="cleaning_image_text">Cleaning Image</string>
+    <string name="complete_request_text">Complete Request</string>
+    <string name="pay_later_text">Pay Later</string>
+    <string name="number_of_passengers_hint">Number of Passengers…</string>
+    <string name="duration_hours_text">Duration(Hours)</string>
+    <string name="cost_label">Cost:</string>
+    <string name="real_advice_text">Subscribe with us to get the best out of us.</string>
+    <string name="enter_weight_tonnes_txt">Enter Weight(Tonnes)</string>
+    <string name="pay_via_bank_text">Pay Via Bank</string>
+
+    <string-array name="vehicle_types">
+        <item>Motorcycle (50)</item>
+        <item>Car (200)</item>
+        <item>Pickup (350)</item>
+        <item>Van (600)</item>
+        <item>Bus (1200)</item>
+    </string-array>
 </resources>

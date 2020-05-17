@@ -16,10 +16,10 @@
 
     <Button
         android:id="@+id/cleanrepair"
-        android:layout_width="309dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#7fda80"
-        android:text="Cleaning and repair"
+        android:text="@string/complete_request_text"
         android:textSize="25sp"
         android:textStyle="bold" />
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_text" />
+    <item
+        android:id="@+id/hireFragment"
+        android:icon="@drawable/car"
+        android:title="@string/hire_text" />
+
+    <item
+        android:id="@+id/transportationFragment"
+        android:icon="@drawable/luggage"
+        android:title="@string/transportation_text" />
+    <item
+        android:id="@+id/repairFragment"
+        android:icon="@drawable/materials"
+        android:title="@string/repair_text" />
+    <item
+        android:id="@+id/adviceFragment"
+        android:icon="@drawable/others"
+        android:title="@string/advice_text" />
+
+</menu>
